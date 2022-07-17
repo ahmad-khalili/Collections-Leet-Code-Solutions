@@ -1,3 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using LeetCode.Collections;
 
-Console.WriteLine("Hello, World!");
+MinStack stack = new();
+stack.Push(-2);
+stack.Push(0);
+stack.Push(-3);
+Console.WriteLine(stack.GetMin());
+Console.WriteLine(stack.Pop());
+Console.WriteLine(stack.Top());
+Console.WriteLine(stack.GetMin());
